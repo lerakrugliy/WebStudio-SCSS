@@ -1,0 +1,19 @@
+@keyframes top{
+    0%{
+        transform: translateY(0%);
+        background-color: #1b7dcd;
+    }
+    100%{
+        transform: translateY(-10%);
+        background-color: #1a5381;
+    }
+}
+
+@keyframes leftRight{
+    0%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(10%);
+    }
+}
