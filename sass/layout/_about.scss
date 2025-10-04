@@ -2,13 +2,13 @@
     padding: 94px 0;
 }
 
-.about_list {
+.about__list {
     display: flex; 
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.about_item {
+.about__item {
     flex: 1; 
     margin-right: 0px;
     position: relative;
@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.about_item::before {
+.about__item::before {
     content: "";
     position: absolute;
     top: 0;
@@ -29,23 +29,23 @@
     background-position: center;
 }
 
-.icon-attention::before {
+.about__item--attention::before {
     background-image: url("../img/icon-attention.jpg");
 }
 
-.icon-punctuality::before {
+.about__item--punctuality::before {
     background-image: url("../img/icon-punctuality.jpg");
 }
 
-.icon-planning::before {
+.about__item--planning::before {
     background-image: url("../img/icon-planning.png");
 }
 
-.icon-technology::before {
+.about__item--technology::before {
     background-image: url("../img/icon-technology.jpg");
 }
 
-.about_title {
+.about__title {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
@@ -53,7 +53,7 @@
     margin-bottom: 10px;
 }
 
-.about_text {
+.about__text {
     font-weight: 400;
     line-height: 171%;
     color: $secondaryTextColor;

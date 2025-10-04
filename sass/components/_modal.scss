@@ -35,7 +35,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_icon {
+.modal__icon {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -51,7 +51,7 @@
     right: 8px;
 }
 
-.modal_icon svg {
+.modal__icon svg {
     width: 18px;
     height: 18px;
     stroke: currentColor;
@@ -61,12 +61,12 @@
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_icon:hover svg {
+.modal__icon:hover svg {
     stroke:$accentColor;
     fill:$accentColor;
 }
 
-.modal_title{
+.modal__title{
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
@@ -80,21 +80,21 @@
 
 }
 
-.modal_form {
+.modal__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.modal_div_text {
+.modal__text {
     display: flex;
     flex-direction: column;
     gap: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_label{
+.modal__label{
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
@@ -102,13 +102,13 @@
     margin-bottom: 4px;
 }
 
-.modal_write{
+.modal__write{
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.modal_write input{
+.modal__write input{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
@@ -118,7 +118,7 @@
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_write_last textarea{
+.modal__write--last textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
@@ -128,28 +128,28 @@
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_write:focus-within input {
+.modal__write:focus-within input {
     border: 1px solid $accentColor;
 }
 
-.modal_write_last:focus-within textarea {
+.modal__write--last:focus-within textarea {
     border: 1px solid $accentColor;
 }
 
-.modal_img{
+.modal__img{
     position: absolute;
     left: 16px;
 }
 
-.modal_div_text:focus-within {
+.modal__text:focus-within {
     color:$accentColor;
 }
 
-.modal_div_text:focus-within input {
+.modal__text:focus-within input {
     outline: 1px solid #03A9F4;
 }
 
-.modal_div_text:focus-within textarea {
+.modal__text:focus-within textarea {
     outline: 1px solid #03A9F4;
 }
 
@@ -161,7 +161,7 @@
     color:$secondaryTextColor;
 }
 
-.modal_button{
+.modal__button{
     margin-top: 30px;
     border-radius: 4px;
     width: 200px;
@@ -177,7 +177,7 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_button:hover{
+.modal__button:hover{
     background-color: #1b7dcd;
     animation: top 500ms infinite alternate;
 }

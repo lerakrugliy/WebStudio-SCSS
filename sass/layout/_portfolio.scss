@@ -2,18 +2,18 @@
     padding-bottom: 94px;
 }
 
-.portfolio_list {
+.portfolio__list {
     display: flex; 
     gap: 30px;
 }
 
-.portfolio_item {
+.portfolio__item {
     position: relative;
     flex: 1;
     margin-right: 0px;
 }
 
-.portfolio_position{
+.portfolio__position{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     top: 225px;
 }
 
-.portfolio_position_text{
+.portfolio__position-text{
     font-family: $fontFamily;
     font-weight: 700;
     font-size: 14px;
@@ -34,13 +34,13 @@
     color: $footerTextColor;
 }
 
-.portfolio_item img {
+.portfolio__item img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.portfolio_title {
+.portfolio__title {
     font-weight: 700;
     font-size: 36px;
     text-align: center;
