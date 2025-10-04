@@ -25,13 +25,13 @@
 }
 
 .portfolio_position_text{
-    font-family: var(--font-family);
+    font-family: $fontFamily;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: var(--footer-text-color);
+    color: $footerTextColor;
 }
 
 .portfolio_item img {

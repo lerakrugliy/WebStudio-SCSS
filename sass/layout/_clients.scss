@@ -29,7 +29,7 @@
 }
 
 .clients_item:hover{
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accentColor;
 }
 
 .clients_icon {
@@ -40,5 +40,5 @@
 }
 
 .clients_item:hover .clients_icon {
-    fill: var(--accent-color);
+    fill: $accentColor;
 }

@@ -9,7 +9,7 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--logo-color-light);
+    color: $logoColorLight;
     margin-bottom: 20px;
 }
 
@@ -30,7 +30,7 @@
     font-size: 16px;
     line-height: 125%;
     letter-spacing: 0.03em;
-    color: var(--logo-color-light);
+    color: $logoColorLight;
     opacity: 0.6;
 }
 

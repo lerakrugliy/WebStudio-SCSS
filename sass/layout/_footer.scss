@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--footer-bg-color);
+    background-color: $footerBgColor;
     padding: 60px 0;
 }
 
@@ -12,19 +12,19 @@
     display: inline-block;
     font-weight: 700;
     font-size: 26px;
-    font-family: var(--second-family);
-    color: var(--logo-color-light);
+    font-family: $secondFamily;
+    color: $logoColorLight;
     margin-bottom: 20px;
 }
 
 .footer_link_span_blue {
-    color: var(--accent-color)
+    color: $accentColor;
 }
 
 .footer_text {
     font-weight: 400;
     line-height: 171%;
-    color: var(--logo-color-light);
+    color: $logoColorLight;
     margin-bottom: 9px;
 }
 
@@ -54,6 +54,6 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--bg-color);
+    color: $bgColor;
     margin-bottom: 20px;
 }

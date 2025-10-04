@@ -53,7 +53,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--accent-color);
+    background-color: $accentColor;
 
     transform: translateY(100%);
     opacity: 0;
@@ -62,12 +62,12 @@
 }
 
 .overlay_text{
-    font-family: var(--font-family);
+    font-family: $fontFamily;
     font-weight: 400;
     font-size: 18px;
     line-height: 156%;
     letter-spacing: 0.03em;
-    color: var(--footer-text-color);
+    color: $footerTextColor;
     padding: 63px 24px;
 }
 
@@ -85,5 +85,5 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 187%;
-    color: var(--secondary-text-color);
+    color: $secondaryTextColor;
 }
