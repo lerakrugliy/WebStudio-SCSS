@@ -1,10 +1,10 @@
-.footer_subscribe {
+.footer__subscribe {
     display: flex;
     flex-direction: column;
     margin-left: 93px;
 }
 
-.subscribe_title{
+.footer__subscribe-title{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -13,12 +13,12 @@
     margin-bottom: 20px;
 }
 
-.subscribe_form{
+.subscribe__form{
     display: flex;
     gap: 12px;
 }
 
-.subscribe_form input{
+.subscribe__form input{
     padding-left: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;

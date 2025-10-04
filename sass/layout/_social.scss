@@ -1,8 +1,23 @@
-.social_list{
+.footer__social{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.footer__social-title{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $bgColor;
+    margin-bottom: 20px;
+}
+
+.social__list{
     display: flex;
 }
 
-.social_item{
+.social__item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +30,7 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social_item:hover{
+.social__item:hover{
     color: currentColor;
     background-color: $accentColor;
     animation: top 500ms infinite alternate;

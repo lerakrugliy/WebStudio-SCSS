@@ -21,7 +21,7 @@
     animation: top 500ms infinite alternate;
 }
 
-.button_button{
+.filter__button{
     padding: 6px 22px;
     border: none;
     background-color: #F5F4FA;
@@ -33,18 +33,18 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button_button:hover,
-.button_button.current_button {
+.filter__button:hover,
+.filter__button--current {
     background-color: $accentColor;
     color: $logoColorLight;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.button_button:hover{
+.filter__button:hover{
     animation: top 500ms infinite alternate;
 }
 
-.subscribe_button{
+.subscribe__button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe_button:hover{
+.subscribe__button:hover{
     background-color: #1b7dcd;
     animation: top 500ms infinite alternate;
 }

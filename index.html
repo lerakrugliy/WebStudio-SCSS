@@ -12,56 +12,56 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header-container">
-            <a href="./index.html" class="header_link">
-                <span class="header_link_span_blue">Web</span>
-                <span class="header_link_span_black">Studio</span>
+        <div class="container header__container">
+            <a href="./index.html" class="header__logo">
+                <span class="header__logo-part header__logo-part--blue">Web</span>
+                <span class="header__logo-part header__logo-part--black">Studio</span>
             </a>
-            <nav class="header_nav">
-                <ul class="header_list">
-                    <li class="header_item"><a href="./index.html" class="header_list_link current">Студія</a></li>
-                    <li class="header_item"><a href="./portfolio.html" class="header_list_link">Портфоліо</a></li>
-                    <li class="header_item"><a href="#contacts" class="header_list_link">Контакти</a></li>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./index.html" class="header__link header__link--current">Студія</a></li>
+                    <li class="header__item"><a href="./portfolio.html" class="header__link">Портфоліо</a></li>
+                    <li class="header__item"><a href="#contacts" class="header__link">Контакти</a></li>
                 </ul>
             </nav>
-            <div class="header-contacts">
-                <div class="header_link_info">
-                    <svg class="header_icon_info" style="width: 16px; height: 12px; fill: currentColor;"><use href="./img/symbol-defs.svg#icon-envelope"></use></svg>
-                    <a href="mailto:info@webstudio.com" class="header_link_info_a">info@webstudio.com</a>
+            <div class="header__contacts">
+                <div class="header__contact-mail">
+                    <svg class="header__icon-mail" style="width: 16px; height: 12px; fill: currentColor;"><use href="./img/symbol-defs.svg#icon-envelope"></use></svg>
+                    <a href="mailto:info@webstudio.com" class="header__contact-link">info@webstudio.com</a>
                 </div>
-                <div class="header_link_number">
-                    <svg class="header_icon_number" style="width: 10px; height: 16px; fill: currentColor;"><use href="./img/symbol-defs.svg#icon-phone"></use></svg>
-                    <a href="tel:+380961111111" class="header_link_number_a">+38 096 111 11 11</a>
+                <div class="header__contact-number">
+                    <svg class="header__icon-info" style="width: 10px; height: 16px; fill: currentColor;"><use href="./img/symbol-defs.svg#icon-phone"></use></svg>
+                    <a href="tel:+380961111111" class="header__contact-link">+38 096 111 11 11</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <section class="heading">
-            <div class="container heading-container">
-                <h1 class="heading_title">ЕФЕКТИВНІ РІШЕННЯ<br>ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                <button type="button" class="heading_button" data-modal-open>Замовити послугу</button>
+            <div class="container heading__container">
+                <h1 class="heading__title">ЕФЕКТИВНІ РІШЕННЯ<br>ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+                <button type="button" class="heading__button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         
         <section class="about">
             <div class="container">
-                <ul class="about_list">
-                    <li class="about_item icon-attention">
-                        <h3 class="about_title">Увага до деталей</h3>
-                        <p class="about_text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                <ul class="about__list">
+                    <li class="about__item icon__attention">
+                        <h3 class="about__title">Увага до деталей</h3>
+                        <p class="about__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li class="about_item icon-punctuality">
-                        <h3 class="about_title">Пунктуальність</h3>
-                        <p class="about_text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    <li class="about__item icon__punctuality">
+                        <h3 class="about__title">Пунктуальність</h3>
+                        <p class="about__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li class="about_item icon-planning">
+                    <li class="about__item icon__planning">
                         <h3 class="about_title">Планування</h3>
                         <p class="about_text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="about_item icon-technology">
-                        <h3 class="about_title">Сучасні технології</h3>
-                        <p class="about_text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    <li class="about__item icon__technology">
+                        <h3 class="about__title">Сучасні технології</h3>
+                        <p class="about__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
             </div>
@@ -69,11 +69,11 @@
         
         <section class="portfolio">
             <div class="container">
-                <h2 class="portfolio_title">Чим ми займаємося</h2>
-                <ul class="portfolio_list">
-                    <li class="portfolio_item">
+                <h2 class="portfolio__title">Чим ми займаємося</h2>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">
                         <img src="./img/img2.jpg" alt="Розробка дизайну">
-                        <div class="portfolio_position">
+                        <div class="portfolio__position">
                             <p class="portfolio_position_text">Десктопні додатки</p>
                         </div>
                     </li>
@@ -171,53 +171,51 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container footer-container"> 
-            <div class="footer_left">
-                <a href="./index.html" class="footer_link">            
-                    <span class="footer_link_span_blue">Web</span>
-                    <span class="footer_link_span_white">Studio</span>
+        <div class="container footer__container">
+            <div class="footer__left">
+                <a href="./index.html" class="footer__logo">
+                    <span class="footer__logo-part footer__logo-part--blue">Web</span>
+                    <span class="footer__logo-part footer__logo-part--black">Studio</span>
                 </a>
-                <address class="footer_address">
-                    <p class="footer_text">м. Київ, пр-т Перемоги, 26</p>
-                    <div class="footer_div_info">
-                        <a href="mailto:info@webstudio.com" class="footer_link_info">info@webstudio.com</a>
-                        <a href="tel:+380961111111" class="footer_link_number">+38 096 111 11 11</a>
+                <address class="footer__address">
+                    <p class="footer__text">м. Київ, пр-т Перемоги, 26</p>
+                    <div class="footer__info">
+                        <a href="mailto:info@webstudio.com" class="footer__info-link">info@webstudio.com</a>
+                        <a href="tel:+380961111111" class="footer__info-link">+38 096 111 11 11</a>
                     </div>
                 </address>
             </div>
-            <div class="footer_enjoy">
-                <p class="footer_enjoy_text">Приєднуйтеся</p>
-                <ul class="social_list">
-                    <li class="social_item">
-                        <svg class="social_icon" style="width: 20px; height: 20px; fill: #fff;">
+            <div class="footer__social">
+                <p class="footer__social-title">Приєднуйтеся</p>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <svg class="social__icon" style="width: 20px; height: 20px; fill: #fff;">
                             <use href="./img/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                     </li>
-                    <li class="social_item">
-                        <svg class="social_icon" style="width: 20px; height: 20px; fill: #fff;">
+                    <li class="social__item">
+                        <svg class="social__icon" style="width: 20px; height: 20px; fill: #fff;">
                             <use href="./img/symbol-defs.svg#icon-twitter"></use>
                         </svg>
                     </li>
-                    <li class="social_item">
-                        <svg class="social_icon" style="width: 20px; height: 20px; fill: #fff;">
+                    <li class="social__item">
+                        <svg class="social__icon" style="width: 20px; height: 20px; fill: #fff;">
                             <use href="./img/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                     </li>
-                    <li class="social_item">
-                        <svg class="social_icon" style="width: 20px; height: 20px; fill: #fff;">
+                    <li class="social__item">
+                        <svg class="social__icon" style="width: 20px; height: 20px; fill: #fff;">
                             <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                         </svg>
                     </li>
                 </ul>
             </div>
-            <div class="footer_subscribe">
-                <p class="subscribe_title">Підпишіться на розсилку</p>
-                <div class="subscribe_down">
-                    <form class="subscribe_form">
-                        <input type="text" placeholder="E-mail">
-                        <button class="subscribe_button">Підписатися <img style="width: 24px; height: 24px;" src="./img/send.svg" alt="підписатися"> </button>
-                    </form>
-                </div>
+            <div class="footer__subscribe">
+                <p class="footer__subscribe-title">Підпишіться на розсилку</p>
+                <form class="subscribe__form">
+                    <input type="text" placeholder="E-mail">
+                    <button class="subscribe__button">Підписатися <img style="width: 24px; height: 24px;" src="./img/send.svg" alt="підписатися"> </button>
+                </form>
             </div>
         </div>
     </footer>

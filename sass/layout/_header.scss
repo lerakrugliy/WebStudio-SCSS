@@ -2,28 +2,13 @@
     padding-top: 15px;
 }
 
-.header-container {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_nav {
-    display: flex; 
-    align-items: center;
-}
-
-.header_list {
-    display: flex; 
-    gap: 30px;
-}
-
-.header_item {
-    flex-basis: calc( ( 100% - 2 * 30px ) /  3);
-    position: relative;
-}
-
-.header_link {
+.header__logo-part {
     font-family: $secondFamily;
     font-weight: 700;
     font-size: 26px;
@@ -31,11 +16,26 @@
     animation: leftRight 500ms 5 alternate;
 }
 
-.header_link_span_blue {
+.header__logo-part--blue {
     color: $accentColor;
 }
 
-.header_list_link {
+.header__nav {
+    display: flex; 
+    align-items: center;
+}
+
+.header__list {
+    display: flex; 
+    gap: 30px;
+}
+
+.header__item {
+    flex-basis: calc( ( 100% - 2 * 30px ) /  3);
+    position: relative;
+}
+
+.header__link {
     display: block;
     text-decoration: none;
     padding: 20px 0;
@@ -46,7 +46,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header_list_link::after {
+.header__link::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -58,26 +58,25 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header_list_link:hover::after,
-.header_list_link.current::after {
+.header__link:hover::after,
+.header__link--current::after {
     width: 100%; }
 
 
-.header_list_link.current {
+.header__link--current, 
+.header__link:hover  {
     color: $accentColor;
 }
 
-.header_list_link:hover {
-    color: $accentColor;
-}
-
-.header-contacts {
+.header__contacts {
     display: flex; 
     align-items: center;
 }
 
-.header_link_info,
-.header_link_number {
+
+
+.header__contact-number,
+.header__contact-mail{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -89,7 +88,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header_link_info:hover,
-.header_link_number:hover {
+.header__contact-number:hover,
+.header__contact-mail:hover{
     color: $accentColor;
 }
