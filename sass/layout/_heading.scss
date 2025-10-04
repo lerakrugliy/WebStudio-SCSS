@@ -12,21 +12,21 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.heading__container {
+    &__container {
     display: flex; 
     flex-direction: column; 
     align-items: center;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 136%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $logoColorLight;
+        margin-bottom: 30px;
+    }
 }
 
-.heading__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 136%;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    color: $logoColorLight;
-    margin-bottom: 30px;
-}

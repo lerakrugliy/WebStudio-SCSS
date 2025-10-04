@@ -1,41 +1,33 @@
-.header{
-    padding-top: 15px;
-}
-
-.header__container {
+.header {
+  padding-top: 15px;
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__logo-part {
+  }
+  &__logo-part {
     font-family: $secondFamily;
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
     animation: leftRight 500ms 5 alternate;
-}
-
-.header__logo-part--blue {
-    color: $accentColor;
-}
-
-.header__nav {
-    display: flex; 
+    &--blue {
+      color: $accentColor;
+    }
+  }
+  &__nav {
+    display: flex;
     align-items: center;
-}
-
-.header__list {
-    display: flex; 
+  }
+  &__list {
+    display: flex;
     gap: 30px;
-}
-
-.header__item {
-    flex-basis: calc( ( 100% - 2 * 30px ) /  3);
+  }
+  &__item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
     position: relative;
-}
-
-.header__link {
+  }
+  &__link {
     display: block;
     text-decoration: none;
     padding: 20px 0;
@@ -44,39 +36,31 @@
     color: $secondaryTextColor;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background-color: $accentColor;
-    border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__link:hover::after,
-.header__link--current::after {
-    width: 100%; }
-
-
-.header__link--current, 
-.header__link:hover  {
-    color: $accentColor;
-}
-
-.header__contacts {
-    display: flex; 
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: $accentColor;
+      border-radius: 4px;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &--current,
+    &:hover {
+      color: $accentColor;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
     align-items: center;
-}
-
-
-
-.header__contact-number,
-.header__contact-mail{
+  }
+  &__contact-number,
+  &__contact-mail {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -86,9 +70,8 @@
     text-decoration: none;
     margin-left: 30px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__contact-number:hover,
-.header__contact-mail:hover{
-    color: $accentColor;
+    &:hover {
+      color: $accentColor;
+    }
+  }
 }

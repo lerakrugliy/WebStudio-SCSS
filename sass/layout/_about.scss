@@ -1,60 +1,86 @@
 .about {
-    padding: 94px 0;
-}
+  padding: 94px 0;
 
-.about__list {
-    display: flex; 
+  &__list {
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
+  }
 
-.about__item {
-    flex: 1; 
-    margin-right: 0px;
+  &__item {
+    flex: 1;
     position: relative;
     padding-top: 170px;
     text-align: center;
-}
 
-.about__item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 270px;
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    &--attention::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 270px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../img/icon-attention.jpg");
+    }
 
-.about__item--attention::before {
-    background-image: url("../img/icon-attention.jpg");
-}
+    &--punctuality::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 270px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../img/icon-punctuality.jpg");
+    }
 
-.about__item--punctuality::before {
-    background-image: url("../img/icon-punctuality.jpg");
-}
+    &--planning::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 270px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../img/icon-planning.png");
+    }
 
-.about__item--planning::before {
-    background-image: url("../img/icon-planning.png");
-}
+    &--technology::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 270px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../img/icon-technology.jpg");
+    }
+  }
 
-.about__item--technology::before {
-    background-image: url("../img/icon-technology.jpg");
-}
-
-.about__title {
+  &__title {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 114%;
     margin-bottom: 10px;
-}
+  }
 
-.about__text {
+  &__text {
     font-weight: 400;
     line-height: 171%;
     color: $secondaryTextColor;
+  }
 }
