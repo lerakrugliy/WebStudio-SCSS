@@ -41,9 +41,7 @@
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   cursor: pointer;
   padding: 0;
   position: absolute;
@@ -65,9 +63,7 @@
 }
 
 .modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.03em;
+  @include font(700, 20px);
   text-align: center;
   margin-bottom: 12px;
 }
@@ -78,15 +74,12 @@
 }
 
 .modal__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(null, column);
   gap: 10px;
 }
 
 .modal__text {
-  display: flex;
-  flex-direction: column;
+  @include flex(null, column, null);
   gap: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus-within {
@@ -99,17 +92,14 @@
 }
 
 .modal__label {
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, normal, 0.01em);
   color: $secondaryTextColor;
   margin-bottom: 4px;
 }
 
 .modal__write {
   position: relative;
-  display: flex;
-  align-items: center;
+  @include flex(null);
   & input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;

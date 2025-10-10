@@ -3,10 +3,9 @@
   padding: 94px 0;
 
   &__title {
-    font-weight: 700;
-    font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
+    @include font(700, 36px);
   }
 
   &__list {
@@ -33,14 +32,14 @@
   }
 
   &__subtitle {
-    font-weight: 500;
-    font-size: 16px;
+    @include font(500, 16px);
     text-align: center;
   }
 
   &__text {
     font-weight: 400;
     font-size: 16px;
+    @include font(400, 16px);
     text-align: center;
     color: $secondaryTextColor;
     margin-top: 10px;

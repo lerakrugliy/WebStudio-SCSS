@@ -1,14 +1,13 @@
 .header {
   padding-top: 15px;
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between);
   }
   &__logo-part {
     font-family: $secondFamily;
     font-weight: 700;
     font-size: 26px;
+    @include font(700, 26px);
     text-decoration: none;
     animation: leftRight 500ms 5 alternate;
     &--blue {
@@ -16,8 +15,7 @@
     }
   }
   &__nav {
-    display: flex;
-    align-items: center;
+    @include flex(null);
   }
   &__list {
     display: flex;
@@ -31,8 +29,7 @@
     display: block;
     text-decoration: none;
     padding: 20px 0;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+    @include font(500, initial, normal, 0.02em);
     color: $secondaryTextColor;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,16 +53,13 @@
     }
   }
   &__contacts {
-    display: flex;
-    align-items: center;
+    @include flex(null);
   }
   &__contact-number,
   &__contact-mail {
-    display: flex;
-    align-items: center;
+    @include flex(null);
     gap: 10px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+    @include font(500, initial, normal, 0.02em);
     color: $secondaryTextColor;
     text-decoration: none;
     margin-left: 30px;

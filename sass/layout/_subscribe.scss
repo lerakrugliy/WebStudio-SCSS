@@ -1,11 +1,9 @@
 .subscribe {
-    display: flex;
-    flex-direction: column;
+    @include flex(null, column, null);
     margin-left: 93px;
     &__title{
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+
+    @include font(700, 14px);
     text-transform: uppercase;
     color: $logoColorLight;
     margin-bottom: 20px;
@@ -21,10 +19,7 @@
     height: 50px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: rgba(33, 150, 243, 0);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: 0.03em;
+    @include font(400, 16px, 125%);
     color: $logoColorLight;
     opacity: 0.6;
 }

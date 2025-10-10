@@ -3,14 +3,12 @@
   padding: 60px 0;
 
   &__container {
-    display: flex;
-    align-items: baseline;
+    @include flex(null, row, baseline);
   }
 
   &__logo-part {
     display: inline-block;
-    font-weight: 700;
-    font-size: 26px;
+    @include font(700, 26px);
     font-family: $secondFamily;
     color: $logoColorLight;
     margin-bottom: 20px;
@@ -21,36 +19,29 @@
   }
 
   &__text {
-    font-weight: 400;
-    line-height: 171%;
+    @include font(400, initial, 171%);
     color: $logoColorLight;
     margin-bottom: 9px;
   }
 
   &__info {
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
-    line-height: 171%;
+    @include flex(null, column, null);
+    @include font(400, initial, 171%);
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
 
     &-link {
       color: rgba(255, 255, 255, 0.6);
-      font-weight: 400;
-      line-height: 171%;
+      @include font(400, initial, 171%);
     }
   }
 
   &__social {
-    display: flex;
-    flex-direction: column;
+    @include flex(null, column, null);
     margin-left: 70px;
 
     &-title {
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: 0.03em;
+      @include font(700, 14px);
       text-transform: uppercase;
       color: $bgColor;
       margin-bottom: 20px;
@@ -61,9 +52,7 @@
     }
 
     &__item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex();
       width: 44px;
       height: 44px;
       border-radius: 50px;
@@ -81,14 +70,11 @@
   }
 
   &__subscribe {
-    display: flex;
-    flex-direction: column;
+    @include flex(null, column, null);
     margin-left: 93px;
 
     &-title {
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: 0.03em;
+      @include font(700, 14px);
       text-transform: uppercase;
       color: $logoColorLight;
       margin-bottom: 20px;
@@ -106,10 +92,7 @@
         height: 50px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: rgba(33, 150, 243, 0);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 125%;
-        letter-spacing: 0.03em;
+        @include font(400, 16px, 125%);
         color: $logoColorLight;
         opacity: 0.6;
       }

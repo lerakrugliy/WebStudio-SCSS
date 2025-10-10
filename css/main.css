@@ -35,6 +35,11 @@ button {
   text-align: center;
 }
 
+.subscribe__button, .filter__button, .heading__button {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 body {
   background-color: #ffffff;
   color: #212121;
@@ -106,9 +111,7 @@ body {
   width: 216px;
   height: 50px;
   border: none;
-  border-radius: 4px;
   padding: 15px 30px;
-  cursor: pointer;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -125,7 +128,6 @@ body {
   padding: 6px 22px;
   border: none;
   background-color: #F5F4FA;
-  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -154,10 +156,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 4px;
   width: 200px;
   height: 50px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -230,12 +235,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   padding: 0;
   position: absolute;
@@ -259,6 +268,7 @@ body {
 .modal__title {
   font-weight: 700;
   font-size: 20px;
+  line-height: normal;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
@@ -305,6 +315,7 @@ body {
 .modal__label {
   font-weight: 400;
   font-size: 12px;
+  line-height: normal;
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
@@ -315,6 +326,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -391,6 +406,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -399,6 +418,10 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: 0.03em;
   text-decoration: none;
   -webkit-animation: leftRight 500ms 5 alternate;
           animation: leftRight 500ms 5 alternate;
@@ -410,6 +433,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -430,6 +457,8 @@ body {
   text-decoration: none;
   padding: 20px 0;
   font-weight: 500;
+  font-size: initial;
+  line-height: normal;
   letter-spacing: 0.02em;
   color: #757575;
   position: relative;
@@ -458,6 +487,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -466,11 +499,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
   font-weight: 500;
+  font-size: initial;
+  line-height: normal;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
@@ -498,6 +537,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -518,9 +560,10 @@ body {
 }
 
 .filter {
-  line-height: 162%;
   font-weight: 500;
   font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
   text-align: center;
   padding-top: 94px;
   padding-bottom: 50px;
@@ -532,6 +575,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
@@ -543,6 +590,10 @@ body {
 .projects__title {
   font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -623,6 +674,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 187%;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -651,12 +703,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -667,6 +723,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
+  line-height: normal;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -675,6 +732,10 @@ body {
 .portfolio__title {
   font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -755,15 +816,20 @@ body {
   background-image: url("../img/icon-technology.jpg");
 }
 .about__title {
-  font-weight: 700;
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 14px;
   line-height: 114%;
+  letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 .about__text {
   font-weight: 400;
   line-height: 171%;
+  font-weight: 400;
+  font-size: initial;
+  line-height: 171%;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -772,10 +838,12 @@ body {
   padding: 94px 0;
 }
 .team__title {
-  font-weight: 700;
-  font-size: 36px;
   text-align: center;
   margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 0.03em;
 }
 .team__list {
   display: -webkit-box;
@@ -803,11 +871,17 @@ body {
 .team__subtitle {
   font-weight: 500;
   font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 .team__text {
   font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
   margin-top: 10px;
@@ -820,6 +894,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -834,6 +912,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -869,6 +951,10 @@ body {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -876,24 +962,32 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 }
 .clients__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -921,6 +1015,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -929,6 +1027,8 @@ body {
   display: inline-block;
   font-weight: 700;
   font-size: 26px;
+  line-height: normal;
+  letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   margin-bottom: 20px;
@@ -938,7 +1038,9 @@ body {
 }
 .footer__text {
   font-weight: 400;
+  font-size: initial;
   line-height: 171%;
+  letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 9px;
 }
@@ -951,14 +1053,18 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: 400;
+  font-size: initial;
   line-height: 171%;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
 .footer__info-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
+  font-size: initial;
   line-height: 171%;
+  letter-spacing: 0.03em;
 }
 .footer__social {
   display: -webkit-box;
@@ -973,6 +1079,7 @@ body {
 .footer__social-title {
   font-weight: 700;
   font-size: 14px;
+  line-height: normal;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -990,6 +1097,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1020,6 +1131,7 @@ body {
 .footer__subscribe-title {
   font-weight: 700;
   font-size: 14px;
+  line-height: normal;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -1062,6 +1174,10 @@ body {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
@@ -1078,6 +1194,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1109,6 +1229,7 @@ body {
 .subscribe__title {
   font-weight: 700;
   font-size: 14px;
+  line-height: normal;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;

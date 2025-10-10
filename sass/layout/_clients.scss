@@ -5,21 +5,18 @@
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
+    @include font(700, 36px);
     text-align: center;
     margin-bottom: 50px;
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
     gap: 30px;
   }
 
   &__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
     border: 1px solid #afb1b8;
     border-radius: 4px;
     width: 170px;
