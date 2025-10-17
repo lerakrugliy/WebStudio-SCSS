@@ -1,12 +1,14 @@
 .filter {
     @include font(500, 16px, 162%);
-    text-align: center;
+    text-align: left;
     padding-top: 94px;
     padding-bottom: 50px;
     &__buttons{
-    @include flex($align: null);
     flex-wrap: wrap;
-    gap: 8px;
 }
 }
 
+@media (min-width: 768px) {
+  .filter{
+    text-align: center;
+}}
