@@ -1,9 +1,9 @@
 .about {
-  padding: 94px 0;
+  padding: 60px 0;
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
   }
 
@@ -12,61 +12,70 @@
     position: relative;
     padding-top: 170px;
     text-align: center;
+    flex-basis: 100%;
 
     &--attention::before {
       content: "";
       position: absolute;
+      background-color: #F5F4FA;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 270px;
+      width: 450px;
       height: 120px;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url("../img/icon-attention.jpg");
+      background-size: 70px 70px;
+      background-image: url("../img/icon-attention.png");
     }
 
     &--punctuality::before {
       content: "";
       position: absolute;
+      background-color: #F5F4FA;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 270px;
+      width: 450px;
       height: 120px;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url("../img/icon-punctuality.jpg");
+      background-size: 70px 70px;
+      background-image: url("../img/icon-punctuality.png");
     }
 
     &--planning::before {
       content: "";
       position: absolute;
+      background-color: #F5F4FA;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 270px;
+      width: 450px;
       height: 120px;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 70px 70px;
       background-image: url("../img/icon-planning.png");
     }
 
     &--technology::before {
       content: "";
       position: absolute;
+      background-color: #F5F4FA;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 270px;
+      width: 450px;
       height: 120px;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url("../img/icon-technology.jpg");
+      background-size: 70px 70px;
+      background-image: url("../img/icon-technology.png");
     }
   }
 
@@ -77,9 +86,51 @@
   }
 
   &__text {
+    text-align: left;
     font-weight: 400;
     line-height: 171%;
     @include font(400, initial, 171%);
     color: $secondaryTextColor;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+
+      &--technology::before,
+      &--planning::before,
+      &--punctuality::before,
+      &--attention::before {
+        width: 354px;
+      }
+    }
+    &__title{
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    &__item {
+      flex-basis: calc((100% - 90px) / 4);
+
+      &--technology::before,
+      &--planning::before,
+      &--punctuality::before,
+      &--attention::before {
+        width: 270px;
+      }
+    }
+    &__title{
+      text-align: left;
+    }
   }
 }
