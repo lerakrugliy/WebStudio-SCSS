@@ -5,16 +5,18 @@
   &__title {
     text-align: center;
     margin-bottom: 30px;
-    @include font(700, 36px);
+    @include font(700, 28px);
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
   }
 
   &__item {
     flex: 1;
+    flex-basis: 100%;
     border-radius: 0 0 4px 4px;
     margin-right: 0;
     text-align: center;
@@ -43,5 +45,31 @@
     text-align: center;
     color: $secondaryTextColor;
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team{
+    &__title {
+    @include font(700, 36px);
+  }
+    &__list{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__item{
+     flex-basis: calc((100% - 60px) / 2); 
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .team{
+    &__title {
+    @include font(700, 36px);
+  }
+    &__item{
+      flex-basis: calc((100% - 120px) / 4); 
+    }
   }
 }
