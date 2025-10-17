@@ -148,7 +148,6 @@
     &__container {
       @include flex(space-between, row, baseline);
       text-align: left;
-      align-items: flex-start;
       
     }
 
@@ -159,13 +158,7 @@
 
     &__left {
       @include flex(null, column);
-      align-items: flex-start;
     }
-
-    &__social {
-      align-items: flex-start;
-    }
-
     &__subscribe {
       margin-top: 0;
 

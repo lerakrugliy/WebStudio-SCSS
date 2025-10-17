@@ -42,8 +42,5 @@
     max-width: 1600px;
     height: 600px;
     padding: 200px 0 280px;
-    &__title{
-        @include font(900, 44px, 136%, 0.06em);
-    }
   }
 }
