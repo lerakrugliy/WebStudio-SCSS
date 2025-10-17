@@ -144,7 +144,7 @@
 
 
  @media (min-width: 1200px) {
-  .footer{
+  .footer {
     &__container {
       @include flex(space-between, row, baseline);
       text-align: left;
