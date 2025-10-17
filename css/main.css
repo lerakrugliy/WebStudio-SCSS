@@ -566,9 +566,9 @@ body {
   }
 }
 .heading {
-  padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
+  padding: 118px 0px;
+  max-width: 768px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30, 0.4)), to(rgba(0, 0, 0, 0.6))), url("../img/heading.jpg");
@@ -594,7 +594,7 @@ body {
 }
 .heading__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 136%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -603,6 +603,32 @@ body {
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  .heading {
+    max-width: 1200px;
+    height: 400px;
+    padding: 118px 0;
+  }
+  .heading__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+  }
+}
+@media (min-width: 1200px) {
+  .heading {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0 280px;
+  }
+  .heading__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+  }
+}
 .filter {
   font-weight: 500;
   font-size: 16px;
