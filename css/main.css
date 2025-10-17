@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -94,12 +95,24 @@ body {
   }
 }
 .container {
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid red;
+  outline: 1px solid red; /* без !important */
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    outline: 1px solid blue;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    outline: 1px solid green;
+  }
+}
 .heading__button {
   text-align: center;
   background-color: #2196F3;
@@ -418,8 +431,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  font-weight: 700;
-  font-size: 26px;
   line-height: normal;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -430,16 +441,7 @@ body {
   color: #2196F3;
 }
 .header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
 .header__list {
   display: -webkit-box;
@@ -484,16 +486,7 @@ body {
   width: 100%;
 }
 .header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
 .header__contact-number, .header__contact-mail {
   display: -webkit-box;
@@ -520,7 +513,58 @@ body {
 .header__contact-number:hover, .header__contact-mail:hover {
   color: #2196F3;
 }
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
 
+@media (min-width: 768px) {
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.02em;
+  }
+  .header__menu {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header__list {
+    gap: 30px;
+  }
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__logo-part {
+    font-size: 26px;
+  }
+}
 .heading {
   padding: 200px 0;
   max-width: 1600px;

@@ -3,28 +3,32 @@
   &__container {
     @include flex(space-between);
   }
+
   &__logo-part {
     font-family: $secondFamily;
-    font-weight: 700;
-    font-size: 26px;
     @include font(700, 26px);
     text-decoration: none;
     animation: leftRight 500ms 5 alternate;
+
     &--blue {
       color: $accentColor;
     }
   }
+
   &__nav {
-    @include flex(null);
+    display: none;
   }
+
   &__list {
     display: flex;
     gap: 30px;
   }
+
   &__item {
     flex-basis: calc((100% - 2 * 30px) / 3);
     position: relative;
   }
+
   &__link {
     display: block;
     text-decoration: none;
@@ -33,6 +37,7 @@
     color: $secondaryTextColor;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &::after {
       content: "";
       position: absolute;
@@ -44,6 +49,7 @@
       border-radius: 4px;
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &--current,
     &:hover {
       color: $accentColor;
@@ -52,8 +58,9 @@
       }
     }
   }
+
   &__contacts {
-    @include flex(null);
+    display: none
   }
   &__contact-number,
   &__contact-mail {
@@ -66,6 +73,52 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       color: $accentColor;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__nav {
+      display: flex;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include font(500, 12px, normal, 0.02em);
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    &__list {
+      gap: 30px;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__logo-part {
+      font-size: 26px;
     }
   }
 }
