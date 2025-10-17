@@ -1,5 +1,5 @@
 .team {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   padding: 94px 0;
 
   &__title {
@@ -21,9 +21,8 @@
     margin-right: 0;
     text-align: center;
     padding-bottom: 30px;
-    box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2),
-                0 1px 1px 0 rgba(0,0,0,0.14),
-                0 1px 3px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
     & img {
       display: block;
@@ -49,27 +48,24 @@
 }
 
 @media (min-width: 768px) {
-  .team{
-    &__title {
-    @include font(700, 36px);
-  }
-    &__list{
+  .team {
+    &__list {
       flex-direction: row;
       flex-wrap: wrap;
     }
-    &__item{
-     flex-basis: calc((100% - 60px) / 2); 
+    &__item {
+      flex-basis: calc((100% - 2 * 30px) / 2);
     }
   }
 }
 
 @media (min-width: 1200px) {
-  .team{
+  .team {
     &__title {
-    @include font(700, 36px);
-  }
-    &__item{
-      flex-basis: calc((100% - 120px) / 4); 
+      @include font(700, 36px);
+    }
+    &__item {
+      flex-basis: calc((100% - 3 * 30px) / 4) !important;
     }
   }
 }

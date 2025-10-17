@@ -3,10 +3,11 @@
   padding: 60px 0;
 
   &__container {
-    @include flex(null, row, baseline);
+    @include flex(center, column);
   }
-
-  &__logo-part {
+  &__logo{
+    @include flex(center, row);
+    &-part {
     display: inline-block;
     @include font(700, 26px);
     font-family: $secondFamily;
@@ -17,6 +18,8 @@
       color: $accentColor;
     }
   }
+  }
+  
 
   &__text {
     @include font(400, initial, 171%);
@@ -25,7 +28,7 @@
   }
 
   &__info {
-    @include flex(null, column, null);
+    @include flex(null, column);
     @include font(400, initial, 171%);
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
@@ -37,21 +40,24 @@
   }
 
   &__social {
-    @include flex(null, column, null);
-    margin-left: 70px;
+    @include flex(null, column);
+    margin-top: 60px;
 
     &-title {
       @include font(700, 14px);
       text-transform: uppercase;
+      text-align: center;
       color: $bgColor;
       margin-bottom: 20px;
     }
 
-    &__list {
+    &-list {
       display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    &__item {
+    &-item {
       @include flex();
       width: 44px;
       height: 44px;
@@ -70,8 +76,8 @@
   }
 
   &__subscribe {
-    @include flex(null, column, null);
-    margin-left: 93px;
+    @include flex(null, column);
+    margin-top: 60px;
 
     &-title {
       @include font(700, 14px);
@@ -80,15 +86,16 @@
       margin-bottom: 20px;
     }
 
-    &__form {
-      display: flex;
+    &-form {
+      @include flex(null, column, center);
       gap: 12px;
 
       & input {
+        display: flex;
         padding-left: 15px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
-        width: 358px;
+        width: 450px;
         height: 50px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: rgba(33, 150, 243, 0);
@@ -97,6 +104,80 @@
         opacity: 0.6;
       }
     }
+    &-button{
+      @include flex();
+      width: 200px;
+      height: 50px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+      background-color: $accentColor;
+      @include font(700, 16px, 188%, 0.06em);
+      text-align: center;
+      color: $logoColorLight;
+      gap: 10px;
+      @extend %button-base;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      padding: 20px;
+      &:hover{
+      background-color: #1b7dcd;
+      animation: top 500ms infinite alternate;
+      }
+    }
   }
 }
 
+@media (min-width: 768px) {
+  .footer {
+    &__container {
+      @include flex(null, column, center);
+      text-align: center;
+    }
+
+    &__tablet {
+      @include flex(space-between, row, null);
+      gap: 160px;
+    }
+
+    &__social {
+      margin-top: 0;
+  }
+}}
+
+
+ @media (min-width: 1200px) {
+  .footer{
+    &__container {
+      @include flex(space-between, row, baseline);
+      text-align: left;
+      align-items: flex-start;
+      
+    }
+
+    &__tablet {
+      @include flex(null, row, baseline);
+      gap: 70px;
+    }
+
+    &__left {
+      @include flex(null, column);
+      align-items: flex-start;
+    }
+
+    &__social {
+      align-items: flex-start;
+    }
+
+    &__subscribe {
+      margin-top: 0;
+
+      &-form {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        & input {
+          width: 358px;
+        }
+      }
+    }
+  }
+ }
