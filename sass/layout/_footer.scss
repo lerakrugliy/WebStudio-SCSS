@@ -95,7 +95,7 @@
         padding-left: 15px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
-        width: 450px;
+        width: 290px;
         height: 50px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: rgba(33, 150, 243, 0);
@@ -124,6 +124,12 @@
     }
   }
 }
+
+@media (min-width: 480px) {
+  .footer__subscribe-form input {
+    width: 450px;
+}}
+
 
 @media (min-width: 768px) {
   .footer {
