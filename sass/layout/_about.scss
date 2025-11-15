@@ -28,6 +28,11 @@
       background-position: center;
       background-size: 70px 70px;
       background-image: url("../img/about/icon-attention_1x.png");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../img/about/icon-attention_2x.png");
+      }
     }
 
     &--punctuality::before {
@@ -44,6 +49,11 @@
       background-position: center;
       background-size: 70px 70px;
       background-image: url("../img/about/icon-punctuality_1x.png");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../img/about/icon-punctuality_2x.png");
+      }
     }
 
     &--planning::before {
@@ -60,6 +70,11 @@
       background-position: center;
       background-size: 70px 70px;
       background-image: url("../img/about/icon-planning_1x.png");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../img/about/icon-planning_2x.png");
+      }
     }
 
     &--technology::before {
@@ -76,6 +91,11 @@
       background-position: center;
       background-size: 70px 70px;
       background-image: url("../img/about/icon-technology_1x.png");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../img/about/icon-technology_2x.png");
+      }
     }
   }
 
@@ -142,37 +162,5 @@
         width: 270px;
       }
     }
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .about__item--attention::before {
-    background-image: url("../img/about/icon-attention_2x.png");
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .about__item--punctuality::before {
-    background-image: url("../img/about/icon-punctuality_2x.png");
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .about__item--planning::before {
-    background-image: url("../img/about/icon-planning_2x.png");
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .about__item--technology::before {
-    background-image: url("../img/about/icon-technology_2x.png");
   }
 }
